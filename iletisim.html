@@ -309,12 +309,19 @@
           url: 'https://hamenos.pythonanywhere.com/send-email',
           data: formData,
           success: function(response) {
-            // Display success message
-            $('#error-message').html('').hide();
-            $('#success-message').html('<p>Formunuz gönderildi. En kısa sürede size ulaşacağız.</p>').show();
 
-            // Clear form inputs
-            $('#iletisim-formu')[0].reset();
+            if(response == 'success'){
+              // Display success message
+              $('#error-message').html('').hide();
+              $('#success-message').html('<p>Formunuz gönderildi. En kısa sürede size ulaşacağız.</p>').show();
+
+              // Clear form inputs
+              $('#iletisim-formu')[0].reset();
+            } else {
+              errorMessages = '<p>Bir hatayla karşılaştık. Lütfen tekrar deneyin.</p>';
+              $('#success-message').html('').hide();
+              $('#error-message').html(errorMessages).show();
+            }
             $submitButton.removeClass('loading').attr('disabled', false);
           }, 
           error: function(xhr, status, error) {
