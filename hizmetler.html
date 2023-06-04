@@ -54,29 +54,29 @@
 
               <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
                 <li><a href="index.html"><span>Ana Sayfa</span></a></li>
-                <li class="has-children active">
+                <li class="has-children not-clickable active hizmetler-menu" id="pills-hizmetler-menu">
                   <a href="#"><span>Hizmetler</span></a>
                   <ul class="dropdown arrow-top">
-                    <li class="has-children active">
+                    <li class="has-children not-clickable active pills-fizyoterapi-menu" id="pills-fizyoterapi-menu">
                       <a href="#">Fizyoterapi</a>
                       <ul class="dropdown">
-                        <li class="active"><a href="#">Manuel Terapi</a></li>
-                        <li><a href="hizmetler.html">Kupa Terapi</a></li>
-                        <li><a href="hizmetler.html">Kuru İğne</a></li>
-                        <li><a href="hizmetler.html">Graston</a></li>
-                        <li><a href="hizmetler.html">Kinezyo Bantlama</a></li>
-                        <li><a href="hizmetler.html">Evde Fizik Tedavi</a></li>
+                        <li class="active pills-manuel-terapi-menu" id="pills-manuel-terapi-menu"><a href="hizmetler.html?tab=manuel-terapi">Manuel Terapi</a></li>
+                        <li class="pills-kupa-terapi-menu"><a href="hizmetler.html?tab=kupa-terapi">Kupa Terapi</a></li>
+                        <li class="pills-kuru-igne-menu"><a href="hizmetler.html?tab=kuru-igne">Kuru İğne</a></li>
+                        <li class="pills-graston-menu"><a href="hizmetler.html?tab=graston">Graston</a></li>
+                        <li class="pills-kinezyo-bantlama-menu"><a href="hizmetler.html?tab=kinezyo-bantlama">Kinezyo Bantlama</a></li>
+                        <li class="pills-evde-fizik-tedavi-menu"><a href="hizmetler.html?tab=evde-fizik-tedavi">Evde Fizik Tedavi</a></li>
                       </ul>
                     </li>
-                    <li class="has-children">
-                      <a href="pilates.html">Pilates</a>
+                    <li class="has-children not-clickable pills-pilates-menu" id="pills-pilates-menu">
+                      <a href="#">Pilates</a>
                       <ul class="dropdown">
-                        <li><a href="pilates.html">Mat Pilates</a></li>
-                        <li><a href="pilates.html">Reformer Pilates</a></li>
-                        <li><a href="pilates.html">Hamile Pilates</a></li>
+                        <li class="pills-mat-pilates-menu"><a href="hizmetler.html?tab=mat-pilates">Mat Pilates</a></li>
+                        <li class="pills-reformer-pilates-menu"><a href="hizmetler.html?tab=reformer-pilates">Reformer Pilates</a></li>
+                        <li class="pills-hamile-pilates-menu"><a href="hizmetler.html?tab=hamile-pilates">Hamile Pilates</a></li>
                       </ul>
                     </li>
-                    <li><a href="diyetisyen.html">Diyetisyen</a></li>
+                    <li class="pills-diyetisyen-menu"><a href="hizmetler.html?tab=diyetisyen">Diyetisyen</a></li>
                   </ul>
                 </li>
                 <li><a href="blog.html"><span>Blog</span></a></li>
@@ -108,252 +108,254 @@
       </div>
     </div>  
 
-
-    <div class="block-quick-info-2">
-      <div class="container">
-        <div class="row" id="menu-hiz">
-          <div class="col-12">
-            <div class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
-              <a class="nav-link active" id="pills-manuel-terapi-tab" data-toggle="pill" href="#pills-manuel-terapi" role="tab" aria-controls="pills-manuel-terapi" aria-selected="true">Manuel Terapi</a>
-              <a class="nav-link" id="pills-kupa-terapi-tab" data-toggle="pill" href="#pills-kupa-terapi" role="tab" aria-controls="pills-kupa-terapi" aria-selected="false">Kupa Terapi</a>
-              <a class="nav-link" id="pills-kuru-igne-tab" data-toggle="pill" href="#pills-kuru-igne" role="tab" aria-controls="pills-kuru-igne" aria-selected="false">Kuru İğne</a>
-              <a class="nav-link" id="pills-graston-tab" data-toggle="pill" href="#pills-graston" role="tab" aria-controls="pills-graston" aria-selected="false">Graston</a>
-              <a class="nav-link" id="pills-kinezyo-bantlama-tab" data-toggle="pill" href="#pills-kinezyo-bantlama" role="tab" aria-controls="pills-kinezyo-bantlama" aria-selected="false">Kinezyo Bantlama</a>
-              <a class="nav-link" id="pills-evde-fizik-tedavi-tab" data-toggle="pill" href="#pills-evde-fizik-tedavi" role="tab" aria-controls="pills-evde-fizik-tedavi" aria-selected="false">Evde Fizik Tedavi</a>
+    <div class="site-section">
+      <div class="block-quick-info-2">
+        <div class="container">
+          <div class="row" id="menu-hiz">
+            <div class="col-12" id="menu-hiz-1">
+              <div class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                <a class="nav-link active manuel-terapi" id="pills-manuel-terapi-tab" data-toggle="pill" href="#pills-manuel-terapi" role="tab" aria-controls="pills-manuel-terapi" aria-selected="true">Manuel Terapi</a>
+                <a class="nav-link kupa-terapi" id="pills-kupa-terapi-tab" data-toggle="pill" href="#pills-kupa-terapi" role="tab" aria-controls="pills-kupa-terapi" aria-selected="false">Kupa Terapi</a>
+                <a class="nav-link kuru-igne" id="pills-kuru-igne-tab" data-toggle="pill" href="#pills-kuru-igne" role="tab" aria-controls="pills-kuru-igne" aria-selected="false">Kuru İğne</a>
+                <a class="nav-link graston" id="pills-graston-tab" data-toggle="pill" href="#pills-graston" role="tab" aria-controls="pills-graston" aria-selected="false">Graston</a>
+                <a class="nav-link kinezyo-bantlama" id="pills-kinezyo-bantlama-tab" data-toggle="pill" href="#pills-kinezyo-bantlama" role="tab" aria-controls="pills-kinezyo-bantlama" aria-selected="false">Kinezyo Bantlama</a>
+                <a class="nav-link evde-fizik-tedavi" id="pills-evde-fizik-tedavi-tab" data-toggle="pill" href="#pills-evde-fizik-tedavi" role="tab" aria-controls="pills-evde-fizik-tedavi" aria-selected="false">Evde Fizik Tedavi</a>
+              </div>
             </div>
-          </div>
-          <div class="col-12">
-            <div class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
-              <a class="nav-link" id="pills-graston-tab" data-toggle="pill" href="#pills-pilates-1" role="tab" aria-controls="pills-graston" aria-selected="false">Mat Pilates</a>
-              <a class="nav-link" id="pills-kinezyo-bantlama-tab" data-toggle="pill" href="#pills-pilates-2" role="tab" aria-controls="pills-kinezyo-bantlama" aria-selected="false">Reformer Pilates</a>
-              <a class="nav-link" id="pills-evde-fizik-tedavi-tab" data-toggle="pill" href="#pills-pilates-3" role="tab" aria-controls="pills-evde-fizik-tedavi" aria-selected="false">Hamile Pilates</a>
-              <a class="nav-link" id="pills-evde-fizik-tedavi-tab" data-toggle="pill" href="#pills-diyetisyen" role="tab" aria-controls="pills-evde-fizik-tedavi" aria-selected="false">Diyetisyen</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="block-services-1 py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="tab-content" id="pills-tabContent">
-              <div class="tab-pane fade show active" id="pills-manuel-terapi" role="tabpanel" aria-labelledby="pills-manuel-terapi-tab">
-                <div class="row">
-                  <div class="col-12">
-                    <h2 style="color: #ea728c;">Manuel Terapi</h2>
-                    <p class="text-justify">Manuel terapi, fizyoterapinin temel bir bileşenidir ve elle uygulanan tekniklerle kas-iskelet sisteminin tedavisini hedefler. Fizyoterapistler, bu yöntemi kullanarak eklemlerin, kasların ve yumuşak dokuların işlevini iyileştirmek için manipülasyon, mobilizasyon ve masaj gibi teknikleri uygular. Bu yöntem, ağrıyı azaltır, hareket aralığını artırır, kas gerginliklerini giderir ve dolaşımı iyileştirir. Manuel terapi, sıklıkla sertlik, kas spazmları, bel ve boyun ağrısı, spor yaralanmaları ve eklem sorunları gibi durumların tedavisinde kullanılır. Uzman fizyoterapistler, hastanın özel ihtiyaçlarına göre tedavi planını kişiselleştirir ve elle yapılan bu terapiyi etkili bir şekilde uygular. Manuel terapi, kas-iskelet sisteminin sağlığını desteklemek ve hastaların yaşam kalitesini artırmak için önemli bir araçtır.</p>
-                  </div>
-                  <div class="row mt-20 plr-15">
-                    <div class="col-lg-6 col-12">
-                      <img src="images/hizmetler/m-1.png" alt="Image" class="img-fluid">
-                    </div>
-                    <div class="col-lg-6 col-12">
-                      <img src="images/hizmetler/m-2.png" alt="Image" class="img-fluid">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="pills-kupa-terapi" role="tabpanel" aria-labelledby="pills-kupa-terapi-tab">
-                <div class="row">
-                  <div class="col-12">
-                    <h2 style="color: #ea728c;">Kupa Terapi</h2>
-                    <p class="text-justify">Kupa terapisi, geleneksel bir tedavi yöntemidir ve fizyoterapi alanında kullanılmaktadır. Bu terapi, vakum etkisiyle çalışarak vücutta bir dizi olumlu etki sağlar. Fizyoterapistler, kupa terapisini ağrı yönetimi, kas gerilimi azaltma, dolaşımın iyileştirilmesi ve lenfatik drenajın teşvik edilmesi gibi amaçlarla kullanır. Kupaların cilt üzerine yerleştirilmesiyle oluşturulan vakum, kan dolaşımını artırır ve dokuların beslenmesini iyileştirir. Aynı zamanda kasları rahatlatır, hareket aralığını artırır ve ağrıyı hafifletir. Kupa terapisi, özellikle kronik ağrıların tedavisinde etkilidir. Bağışıklık sistemi üzerinde de olumlu etkileri vardır. Lenfatik drenajı uyararak vücuttaki toksinlerin atılmasını teşvik eder ve bağışıklık sistemini güçlendirir. Ayrıca, stresi azaltır ve rahatlama sağlar. 
-
-
-                    Fizyoterapistler, kupa terapisini hastanın ihtiyaçlarına göre uyarlar. Uygulama süresi, bölge ve teknikler kişiye özgü olarak belirlenir. Terapi sırasında rahatsızlık veya yan etki yaşanması durumunda, uzmana başvurulmalıdır. 
-                    
-                    Kupa terapisi, fizyoterapide etkili bir tedavi yöntemidir. Ağrıyı yönetme, kas gerginliği azaltma, dolaşımı iyileştirme ve bağışıklık sistemini güçlendirme konularında yardımcı olur. Fizyoterapistler, bu yöntemi hastalarına özel olarak uygular ve en iyi sonuçları elde etmek için çaba gösterir.</p>
-                  </div>
-                  <div class="col-lg-6 col-12 plr-15">
-                    <img src="images/hizmetler/detail/kupa-1.png" alt="Image" class="img-fluid">
-                  </div>
-                  <div class="col-lg-6 col-12">
-                    <img src="images/hizmetler/detail/kupa-2.png" alt="Image" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="pills-kuru-igne" role="tabpanel" aria-labelledby="pills-kuru-igne-tab">
-                <div class="row">
-                  <div class="col-12">
-                    <h2 style="color: #ea728c;">Kuru İğne</h2>
-                    <p class="text-justify">Kuru iğne, fizyoterapi pratiğinde kullanılan etkili bir tedavi yöntemidir. Bu yöntemde, ince iğneler kaslara ve yumuşak dokulara doğrudan yerleştirilir. Kuru iğne, kas gerginliklerini, ağrıyı ve spazmları hedefleyerek rahatlama sağlar. Bu terapi, kaslardaki tetik noktalarının (trigger noktaları) doğrudan uyarılmasını amaçlar. İğnelerin yerleştirilmesi, kaslardaki gerginliği azaltır ve kan dolaşımını artırır. Böylece kaslarda gevşeme ve iyileşme sağlanır. 
-
-
-                    Fizyoterapistler, kuru iğne tekniğini çeşitli durumların tedavisinde kullanır. Bunlar arasında kas spazmları, fibromiyalji, kronik ağrı sendromları ve tendon problemleri yer alır. Terapi süresi ve sıklığı, hastanın durumuna ve ihtiyaçlarına göre belirlenir. Kuru iğne, diğer tedavi yöntemleriyle birlikte kullanılabileceği gibi, bağımsız olarak da etkili sonuçlar sağlar. Fizyoterapistler, iğne yerleştirme noktalarını ve tedavi sürecini hastanın durumuna göre kişiselleştirir.  
-                    
-                    
-                    Kuru iğne, kas ve yumuşak dokuların tedavisinde kullanılan bir yöntemdir. Bu terapi, kas gerginliklerini azaltır, ağrıyı hafifletir ve hareket aralığını artırır. Fizyoterapistler, kuru iğne hastaların ihtiyaçlarına göre uyarlar ve en iyi sonuçları elde etmek için tedavi planını bireyselleştirir.</p>
-                  </div>
-                  <div class="col-lg-6 col-12 plr-15">
-                    <img src="images/hizmetler/detail/igne-1.png" alt="Image" class="img-fluid">
-                  </div>
-                  <div class="col-lg-6 col-12">
-                    <img src="images/hizmetler/detail/igne-2.png" alt="Image" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="pills-graston" role="tabpanel" aria-labelledby="pills-graston-tab">
-                <div class="row">
-                  <div class="col-12">
-                    <h2 style="color: #ea728c;">Graston</h2>
-                    <p class="text-justify">Graston terapi, kas-iskelet sistemi problemlerinin tedavisinde etkili bir fizyoterapi yöntemidir. Bu yöntemde, özel olarak tasarlanmış metal aletler kullanılarak yumuşak dokulara uygulanan bir masaj tekniği kullanılır. Aletler, kaslarda, tendonlarda ve bağlarda gerginlikleri ve sıkışmaları hedefler. Graston terapisi, dokuların iyileşme sürecini hızlandırır ve ağrıyı hafifletir. Aletlerin cilt üzerinde uygulanması, dokulara kontrollü bir baskı uygular ve kan dolaşımını artırır. Bu da iyileşme sürecini teşvik eder. 
-
-
-                    Fizyoterapistler, Graston terapisini bir tedavi planının bir parçası olarak kullanır. Aletlerin kullanılacağı bölgeler ve uygulanacak teknikler, hastanın durumuna ve ihtiyaçlarına göre belirlenir. Terapi süresi ve sıklığı, tedaviye yanıt ve ilerleme durumuna bağlı olarak ayarlanır. Graston terapisi, kas gerginlikleri, tendonitler, bağ yaralanmaları ve kronik ağrılar gibi birçok durumda etkili olabilir. Fizyoterapistler, hastaların spesifik ihtiyaçlarına göre terapiyi uyarlar ve en iyi sonuçları elde etmek için tedavi planını kişiselleştirir. 
-                    
-                    
-                    Graston terapisi, kas-iskelet sistemi problemlerinin tedavisinde kullanılan etkili bir yöntemdir. Ağrıyı hafifletir, doku iyileşmesini teşvik eder ve hareket aralığını artırır. Fizyoterapistler, Graston terapisini hastaların ihtiyaçlarına göre uyarlar ve en iyi sonuçları elde etmek için tedavi planını bireyselleştirir.</p>
-                  </div>
-                  <div class="col-lg-6 col-12 plr-15">
-                    <img src="images/hizmetler/detail/graston-1.png" alt="Image" class="img-fluid">
-                  </div>
-                  <div class="col-lg-6 col-12">
-                    <img src="images/hizmetler/detail/graston-2.png" alt="Image" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="pills-kinezyo-bantlama" role="tabpanel" aria-labelledby="pills-kinezyo-bantlama-tab">
-                <div class="row">
-                  <div class="col-12">
-                    <h2 style="color: #ea728c;">Kinezyo Bantlama</h2>
-                    <p class="text-justify">Kinesio bant, fizyoterapi uygulamalarında sıklıkla kullanılan bir yöntemdir. Esnek, pamuklu ve renkli bir banttır ve cilt üzerine uygulanarak kaslar, eklemler ve yumuşak dokuların desteklenmesini sağlar. Bu bantların temel amacı, hareketin kolaylaşmasını ve ağrının hafiflemesini sağlamaktır. Kinesio bantlar, gerilme özellikleri sayesinde cilde yapışarak kaslara destek sağlar. Bu destek, kasların hareketini optimize eder ve ağrıyı azaltır. Aynı zamanda, kan ve lenf dolaşımını artırarak doku iyileşmesini hızlandırır. Bantlar, uzun süreli kullanıma uygun olup suya dayanıklıdır. 
-
-
-                    Fizyoterapistler, kinesio bantları birçok durumda kullanabilir. Örneğin, spor yaralanmaları, kas zorlanmaları, eklem ağrıları, postür bozuklukları ve lenfatik drenaj sorunları gibi durumların tedavisinde etkilidir. Bantların uygulama şekli, hastanın ihtiyaçlarına ve tedavi hedeflerine göre değişir. 
-                    
-                    
-                    Sonuç olarak, kinesio bantlar, fizyoterapi pratiğinde yaygın olarak kullanılan bir yöntemdir. Kaslara destek sağlayarak hareketi kolaylaştırır, ağrıyı hafifletir ve doku iyileşmesini hızlandırır. Fizyoterapistler, hastaların spesifik ihtiyaçlarına göre kinesio bantları kullanır ve en iyi sonuçları elde etmek için tedavi planını kişiye özel olarak düzenler.</p>
-                  </div>
-                  <div class="col-lg-6 col-12 plr-15">
-                    <img src="images/hizmetler/detail/kinezyo-1.png" alt="Image" class="img-fluid">
-                  </div>
-                  <div class="col-lg-6 col-12">
-                    <img src="images/hizmetler/detail/kinezyo-2.png" alt="Image" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="pills-evde-fizik-tedavi" role="tabpanel" aria-labelledby="pills-evde-fizik-tedavi-tab">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <h2 style="color: #ea728c;">Evde Fizik Tedavi</h2>
-                    <p class="text-justify">Evde fizik tedavi, birçok kişi için etkili ve erişilebilir bir seçenektir. Bu yöntem, bireylerin kendi ev ortamlarında fiziksel rehabilitasyon programlarını sürdürmelerine olanak sağlar. Evde fizik tedavi, hareket kabiliyetini artırmak, ağrıyı azaltmak ve günlük yaşam aktivitelerine dönüşü kolaylaştırmak için tasarlanmış egzersizler, masaj teknikleri ve uygun ekipmanların kullanımını içerir. 
-
-
-                    Evde fizik tedavisi programı, bireyin özel ihtiyaçlarına ve tedavi hedeflerine göre düzenlenir. Fizyoterapistler, bireyin durumunu değerlendirerek uygun egzersizler, hareketler ve teknikler belirler. Video veya yazılı talimatlarla desteklenen programlar, bireyin doğru şekilde egzersiz yapmasını sağlar. 
-                    
-                    
-                    Evde fizik tedavisi, birçok durumda etkili olabilir. Kas ve eklem ağrıları, postür bozuklukları, spor yaralanmaları, cerrahi sonrası rehabilite, felç sonrası iyileşme gibi durumlar evde fizik tedavisi için uygundur. Düzenli ve disiplinli bir şekilde evde yapılan fizik tedavi, bireylerin sağlık ve hareketliliklerini iyileştirmelerine yardımcı olur. Fizyoterapistler, bireyin ihtiyaçlarına ve hedeflerine uygun bir program oluşturur. Evde fizik tedavisi, ağrıyı azaltır, hareket kabiliyetini artırır ve günlük yaşam aktivitelerine dönüşü kolaylaştırır.</p>
-                  </div>
-                  <div class="col-lg-6 col-12 plr-15">
-                    <img src="images/hizmetler/detail/evde-1.png" alt="Image" class="img-fluid">
-                  </div>
-                  <div class="col-lg-6 col-12">
-                    <img src="images/hizmetler/detail/evde-2.png" alt="Image" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="pills-pilates-1" role="tabpanel" aria-labelledby="pills-manuel-terapi-tab">
-                <div class="row">
-                  <div class="col-12">
-                    <h2 style="color: #ea728c;">Mat Pilates</h2>
-                    <p class="text-justify">Mat Pilates, fiziksel ve zihinsel sağlığı iyileştirmeye yönelik popüler bir egzersiz yöntemidir. Genellikle yoga matı üzerinde yapılan mat pilates, vücut ağırlığı ve küçük ekipmanlar kullanılarak gerçekleştirilir. Mat pilates, tüm vücutta kas gücünü artırmak, esnekliği geliştirmek, duruşu düzeltmek ve core kaslarını güçlendirmek için tasarlanmış bir dizi egzersizi içerir. Bu egzersizler, derin nefes alma, doğru postür ve akıcı hareketler üzerine odaklanarak bedenin dengesini ve esnekliğini artırır. Bir mat pilates dersi genellikle bir egzersiz matı üzerinde yapılır ve vücut ağırlığı kullanılır. Ayrıca direnç bantları, küçük top ve halka gibi ekipmanlar da kullanılabilir. Dersler genellikle fizyoterapistler veya uzman bir eğitmen eşliğinde gerçekleştirilir ve bireysel ihtiyaçlara ve yeteneklere uygun olarak uyarlanabilir. Mat pilatesin birçok faydası vardır. Düzenli olarak yapılması duruşun düzelmesine yardımcı olur, esneklik ve kas tonusunu artırır, kas dengesini geliştirir, stresi azaltır ve zihinsel odaklanmayı iyileştirir. Aynı zamanda orta düzeyde bir egzersiz olduğu için farklı fitness seviyelerindeki kişilere uygundur. 
-
-                    Fizyoterapistler, mat pilatesi hastaların ihtiyaçlarına ve seviyelerine uygun olarak uyarlar. Bireysel bir yaklaşım benimsenir ve egzersizler, hastanın fiziksel yeteneklerine ve sağlık durumuna göre özelleştirilir. Fizyoterapistler, doğru form ve teknikleri öğretir, egzersizleri doğru bir şekilde yapmayı sağlar ve herhangi bir yaralanma riskini en aza indirir. Özellikle rehabilitasyon sürecinde mat pilates, hastaların vücut farkındalığını artırır ve zihinsel odaklanmayı iyileştirir. Nefes alma teknikleri ve akıcı hareketler, hastaların hareketlerini bilinçli bir şekilde yönlendirmesine yardımcı olur ve stresi azaltır.</p>
-                  </div>
-                  <div class="row mt-20 plr-15">
-                    <div class="col-lg-6 col-12">
-                      <img src="images/hizmetler/detail/mat-1.png" alt="Image" class="img-fluid">
-                    </div>
-                    <div class="col-lg-6 col-12">
-                      <img src="images/hizmetler/detail/mat-2.png" alt="Image" class="img-fluid">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="pills-pilates-2" role="tabpanel" aria-labelledby="pills-manuel-terapi-tab">
-                <div class="row">
-                  <div class="col-12">
-                    <h2 style="color: #ea728c;">Reformer Pilates</h2>
-                    <p class="text-justify">Reformer Pilates, fiziksel sağlığı iyileştirmek ve kas kuvvetini artırmak için etkili bir egzersiz yöntemidir. Fizyoterapistler, reformer pilatesi rehabilitasyon programlarının bir parçası olarak sıklıkla önerirler.  Reformer Pilates'in en belirgin özelliği, reformer adı verilen özel bir cihazın kullanılmasıdır. Reformer, kaydırma sistemi, yaylar ve ayarlanabilir ekipmanlardan oluşan bir platformdur. Bu platform üzerinde yapılan egzersizler, direnç ve destek sağlayarak kas gruplarının etkili bir şekilde çalışmasını sağlar. Yaylar, kaslara direnç uygulayarak güçlenmelerini ve kas tonusunu artırmalarını sağlar. Ayrıca, platformun kayma özelliği, vücudun dengede kalmasını gerektiren hareketlerin yapılmasını sağlar. Reformer Pilates, tüm vücutta kas kuvvetini artırmak için tasarlanmıştır. Egzersizler, özellikle çekirdek kaslarını, sırt ve karın kaslarını hedefler. Bu kas gruplarının güçlendirilmesi, vücudun stabilitesini artırır, duruşu düzeltir ve sırt ağrısının azalmasına yardımcı olur. Ayrıca, bacak, kol ve omuz kaslarının güçlenmesini sağlar. Reformer Pilates, esneklik ve hareket aralığını artırma konusunda da etkilidir. Egzersizler, kasları uzatır, eklemlerin esnekliğini artırır ve vücut hareketliliğini geliştirir. Bu, günlük aktivitelere katılımı iyileştirir ve spor performansını optimize eder. 
-
-                    Fizyoterapistler, reformer pilatesi danışanlarının ihtiyaçlarına ve seviyelerine göre özelleştirir. Bireysel bir yaklaşım benimsenir ve egzersizler, hastanın fiziksel yeteneklerine ve sağlık durumuna uygun olarak ayarlanır. Fizyoterapistler, doğru form ve teknikleri öğretir, egzersizleri doğru bir şekilde yapmayı sağlar ve herhangi bir yaralanma riskini en aza indirir. Sonuç olarak, Reformer Pilates, fizyoterapistler tarafından sıklıkla kullanılan etkili bir egzersiz yöntemidir. Rehabilitasyon sürecinde, belirli bir kas grubunu hedefleyerek güçlendirirken aynı zamanda denge, esneklik ve duruşu da düzeltmeye yardımcı olur. Bu egzersiz yöntemi, özellikle bel ve boyun ağrısı, postür problemleri ve sporcu rehabilitasyonunda faydalıdır.</p>
-                  </div>
-                  <div class="row mt-20 plr-15">
-                    <div class="col-lg-6 col-12">
-                      <img src="images/hizmetler/detail/reformer-1.png" alt="Image" class="img-fluid">
-                    </div>
-                    <div class="col-lg-6 col-12">
-                      <img src="images/hizmetler/detail/reformer-2.png" alt="Image" class="img-fluid">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="pills-pilates-3" role="tabpanel" aria-labelledby="pills-manuel-terapi-tab">
-                <div class="row">
-                  <div class="col-12">
-                    <h2 style="color: #ea728c;">Hamile Pilates</h2>
-                    <p class="text-justify">Hamile pilatesi, gebelik döneminde kadınların fiziksel ve zihinsel sağlığını destekleyen etkili bir egzersiz yöntemidir. Bu özel pilates programı, güvenli ve uygun egzersizlerle anne adaylarının esneklik, kas gücü, denge ve postürlerini geliştirmeyi hedefler. 
-
-                    Hamile pilatesi, gebelik sürecindeki değişikliklere uyum sağlamak için uyarlanmış egzersizler sunar. Yavaş, kontrollü hareketlerle karın, sırt, pelvik taban ve kalça kaslarını çalıştırır. Aynı zamanda nefes tekniklerini de vurgular, doğum sürecinde rahatlamayı ve kontrollü nefes almayı sağlar. Bu egzersizler, kasları güçlendirirken aynı zamanda eklemlere ve bağlara da destek olur. Postürü düzeltir, sırt ağrılarını azaltır ve genel vücut farkındalığını artırır. Hamile pilatesi, gebelikte sağlıklı kilo alımını teşvik eder, enerji düzeyini yükseltir ve stresi azaltır. 
-                    
-                    Hamile pilatesi programları, bir fizyoterapist veya uzman bir pilates eğitmeni eşliğinde yapılmalıdır. Bireysel ihtiyaçlara ve gebelik sürecine özel olarak düzenlenir. Her egzersiz seansı, anne adayının konforunu ve güvenliğini ön planda tutar. Hamile pilatesi, gebelik döneminde sağlıklı bir şekilde egzersiz yapmayı hedefler. Esneklik, kas gücü, denge ve postürün geliştirilmesine yardımcı olur. Uzman bir rehberlikle yapılan hamile pilatesi, anne adaylarının fiziksel ve zihinsel sağlığını destekler ve gebelik sürecini daha rahat geçirmelerine yardımcı olur.</p>
-                  </div>
-                  <div class="row mt-20 plr-15">
-                    <div class="col-lg-6 col-12">
-                      <img src="images/hizmetler/detail/hamile-1.png" alt="Image" class="img-fluid">
-                    </div>
-                    <div class="col-lg-6 col-12">
-                      <img src="images/hizmetler/detail/hamile-2.png" alt="Image" class="img-fluid">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="pills-diyetisyen" role="tabpanel" aria-labelledby="pills-manuel-terapi-tab">
-                <div class="row">
-                  <div class="col-12">
-                    <h2 style="color: #ea728c;">Diyetisyen</h2>
-                    <p class="text-justify">Diyetisyen, sağlık bilimleri beslenme ve diyetetik eğitim ve öğretim programını en az dört yılda tamamlayarak Beslenme ve Diyetetik Lisans Diploması alarak diyetisyen unvanını kazanıp; diyetisyenlik mesleğini yapmaya ve uygulamaya hak kazanan profesyonel sağlık personelidir. 
-
-                    Diyetisyenlik, beslenme ve sağlığın birleştiği bir meslektir. Diyetisyenler, bireylerin sağlıklı beslenme alışkanlıkları geliştirmelerine yardımcı olur ve özel beslenme ihtiyaçlarına uygun, bireylerin yaş, cinsiyet, sağlık durumu, aktivite seviyesi ve kişisel tercihlerini dikkate alarak beslenme planları hazırlar. Bu profesyoneller, sağlıklı bir yaşam tarzı için besin değerlerini anlamlandırır, kilo yönetimi, hastalıkların tedavisi veya spora yönelik özel diyetler gibi konularda danışmanlık yapar.  
-                    
-                    Sağlıklı beslenme programları yaşam kalitesini arttırır, hastalıkların tedavisine yardım eder, kilo yönetiminde etkilidir.</p>
-                    <h5 style="color: #ea728c;">Beslenme ve Diyet Bölümümüzde;</h5>
-                    <ul>
-                      <li>Obezite</li>
-                      <li>Aşırı zayıflık</li>
-                      <li>Kalp & Damar Hastalıkları</li>
-                      <li>Diyabet</li>
-                      <li>Tansiyon</li>
-                      <li>Mide ve Barsak Hastalıkları (çölyak, spastik kolon, ülser, reflü…)</li>
-                      <li>Karaciğer Hastalıkları (karaciğer yağlanması, hepatit…)</li>
-                      <li>Gebe ve Emzirme Döneminde Beslenme</li>
-                      <li>Çocuk ve Adölesan Döneminde Beslenme</li>
-                    </ul>
-                    <p>ile ilgili problemlerle gelen hastalarımızın tedavileri yapılmaktadır.</p>
-                    <h5 style="color: #ea728c;">Tedavi Öncesinde</h5>
-                    <p>Vücut analiz cihazıyla yağ, kas, su oranı ölçümleri yapılmakta, <br> 
-                      Bazal metabolizma hızları ve metabolizma yaşları belirlenmekte, <br>
-                      Geriye dönük beslenme durumları ayrıntılı olarak sorgulanmakta, <br>
-                      Kan değerleri incelenmekte ve bununla birlikte çalışma ve sosyal şartları da dikkate alınarak yaş, boy, cinsiyet, fiziksel aktiviteleri doğrultusunda ‘Kişiye Özel Sağlıklı Diyet Programı’ hazırlanmakta ve düzenli takibi sağlanmaktadır.
-                    </p>
-                  </div>
-                  <div class="row mt-20 plr-15">
-                    <div class="col-lg-6 col-12">
-                      <img src="images/hizmetler/detail/diyet-1.png" alt="Image" class="img-fluid">
-                    </div>
-                    <div class="col-lg-6 col-12">
-                      <img src="images/hizmetler/detail/diyet-2.png" alt="Image" class="img-fluid">
-                    </div>
-                  </div>
-                </div>
+            <div class="col-12" id="menu-hiz-1">
+              <div class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                <a class="nav-link mat-pilates" id="pills-mat-pilates-tab" data-toggle="pill" href="#pills-mat-pilates" role="tab" aria-controls="pills-mat-pilates" aria-selected="false">Mat Pilates</a>
+                <a class="nav-link reformer-pilates" id="pills-reformer-pilates-tab" data-toggle="pill" href="#pills-reformer-pilates" role="tab" aria-controls="pills-reformer-pilates" aria-selected="false">Reformer Pilates</a>
+                <a class="nav-link hamile-pilates" id="pills-hamile-pilates-tab" data-toggle="pill" href="#pills-hamile-pilates" role="tab" aria-controls="pills-hamile-pilates" aria-selected="false">Hamile Pilates</a>
+                <a class="nav-link diyetisyen" id="pills-diyetisyen-tab" data-toggle="pill" href="#pills-diyetisyen" role="tab" aria-controls="pills-diyetisyen" aria-selected="false">Diyetisyen</a>
               </div>
             </div>
           </div>
         </div>
       </div>
+  
+      <div class="block-services-1 py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active manuel-terapi-tab" id="pills-manuel-terapi" role="tabpanel" aria-labelledby="pills-manuel-terapi-tab">
+                  <div class="row">
+                    <div class="col-12">
+                      <h2 style="color: #ea728c;">Manuel Terapi</h2>
+                      <p class="text-justify">Manuel terapi, fizyoterapinin temel bir bileşenidir ve elle uygulanan tekniklerle kas-iskelet sisteminin tedavisini hedefler. Fizyoterapistler, bu yöntemi kullanarak eklemlerin, kasların ve yumuşak dokuların işlevini iyileştirmek için manipülasyon, mobilizasyon ve masaj gibi teknikleri uygular. Bu yöntem, ağrıyı azaltır, hareket aralığını artırır, kas gerginliklerini giderir ve dolaşımı iyileştirir. Manuel terapi, sıklıkla sertlik, kas spazmları, bel ve boyun ağrısı, spor yaralanmaları ve eklem sorunları gibi durumların tedavisinde kullanılır. Uzman fizyoterapistler, hastanın özel ihtiyaçlarına göre tedavi planını kişiselleştirir ve elle yapılan bu terapiyi etkili bir şekilde uygular. Manuel terapi, kas-iskelet sisteminin sağlığını desteklemek ve hastaların yaşam kalitesini artırmak için önemli bir araçtır.</p>
+                    </div>
+                    <div class="row mt-20 plr-15">
+                      <div class="col-lg-6 col-12">
+                        <img src="images/hizmetler/m-1.png" alt="Image" class="img-fluid">
+                      </div>
+                      <div class="col-lg-6 col-12">
+                        <img src="images/hizmetler/m-2.png" alt="Image" class="img-fluid">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade kupa-terapi-tab" id="pills-kupa-terapi" role="tabpanel" aria-labelledby="pills-kupa-terapi-tab">
+                  <div class="row">
+                    <div class="col-12">
+                      <h2 style="color: #ea728c;">Kupa Terapi</h2>
+                      <p class="text-justify">Kupa terapisi, geleneksel bir tedavi yöntemidir ve fizyoterapi alanında kullanılmaktadır. Bu terapi, vakum etkisiyle çalışarak vücutta bir dizi olumlu etki sağlar. Fizyoterapistler, kupa terapisini ağrı yönetimi, kas gerilimi azaltma, dolaşımın iyileştirilmesi ve lenfatik drenajın teşvik edilmesi gibi amaçlarla kullanır. Kupaların cilt üzerine yerleştirilmesiyle oluşturulan vakum, kan dolaşımını artırır ve dokuların beslenmesini iyileştirir. Aynı zamanda kasları rahatlatır, hareket aralığını artırır ve ağrıyı hafifletir. Kupa terapisi, özellikle kronik ağrıların tedavisinde etkilidir. Bağışıklık sistemi üzerinde de olumlu etkileri vardır. Lenfatik drenajı uyararak vücuttaki toksinlerin atılmasını teşvik eder ve bağışıklık sistemini güçlendirir. Ayrıca, stresi azaltır ve rahatlama sağlar. 
+  
+  
+                      Fizyoterapistler, kupa terapisini hastanın ihtiyaçlarına göre uyarlar. Uygulama süresi, bölge ve teknikler kişiye özgü olarak belirlenir. Terapi sırasında rahatsızlık veya yan etki yaşanması durumunda, uzmana başvurulmalıdır. 
+                      
+                      Kupa terapisi, fizyoterapide etkili bir tedavi yöntemidir. Ağrıyı yönetme, kas gerginliği azaltma, dolaşımı iyileştirme ve bağışıklık sistemini güçlendirme konularında yardımcı olur. Fizyoterapistler, bu yöntemi hastalarına özel olarak uygular ve en iyi sonuçları elde etmek için çaba gösterir.</p>
+                    </div>
+                    <div class="col-lg-6 col-12 plr-15">
+                      <img src="images/hizmetler/detail/kupa-1.png" alt="Image" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 col-12">
+                      <img src="images/hizmetler/detail/kupa-2.png" alt="Image" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade kuru-igne-tab" id="pills-kuru-igne" role="tabpanel" aria-labelledby="pills-kuru-igne-tab">
+                  <div class="row">
+                    <div class="col-12">
+                      <h2 style="color: #ea728c;">Kuru İğne</h2>
+                      <p class="text-justify">Kuru iğne, fizyoterapi pratiğinde kullanılan etkili bir tedavi yöntemidir. Bu yöntemde, ince iğneler kaslara ve yumuşak dokulara doğrudan yerleştirilir. Kuru iğne, kas gerginliklerini, ağrıyı ve spazmları hedefleyerek rahatlama sağlar. Bu terapi, kaslardaki tetik noktalarının (trigger noktaları) doğrudan uyarılmasını amaçlar. İğnelerin yerleştirilmesi, kaslardaki gerginliği azaltır ve kan dolaşımını artırır. Böylece kaslarda gevşeme ve iyileşme sağlanır. 
+  
+  
+                      Fizyoterapistler, kuru iğne tekniğini çeşitli durumların tedavisinde kullanır. Bunlar arasında kas spazmları, fibromiyalji, kronik ağrı sendromları ve tendon problemleri yer alır. Terapi süresi ve sıklığı, hastanın durumuna ve ihtiyaçlarına göre belirlenir. Kuru iğne, diğer tedavi yöntemleriyle birlikte kullanılabileceği gibi, bağımsız olarak da etkili sonuçlar sağlar. Fizyoterapistler, iğne yerleştirme noktalarını ve tedavi sürecini hastanın durumuna göre kişiselleştirir.  
+                      
+                      
+                      Kuru iğne, kas ve yumuşak dokuların tedavisinde kullanılan bir yöntemdir. Bu terapi, kas gerginliklerini azaltır, ağrıyı hafifletir ve hareket aralığını artırır. Fizyoterapistler, kuru iğne hastaların ihtiyaçlarına göre uyarlar ve en iyi sonuçları elde etmek için tedavi planını bireyselleştirir.</p>
+                    </div>
+                    <div class="col-lg-6 col-12 plr-15">
+                      <img src="images/hizmetler/detail/igne-1.png" alt="Image" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 col-12">
+                      <img src="images/hizmetler/detail/igne-2.png" alt="Image" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade graston-tab" id="pills-graston" role="tabpanel" aria-labelledby="pills-graston-tab">
+                  <div class="row">
+                    <div class="col-12">
+                      <h2 style="color: #ea728c;">Graston</h2>
+                      <p class="text-justify">Graston terapi, kas-iskelet sistemi problemlerinin tedavisinde etkili bir fizyoterapi yöntemidir. Bu yöntemde, özel olarak tasarlanmış metal aletler kullanılarak yumuşak dokulara uygulanan bir masaj tekniği kullanılır. Aletler, kaslarda, tendonlarda ve bağlarda gerginlikleri ve sıkışmaları hedefler. Graston terapisi, dokuların iyileşme sürecini hızlandırır ve ağrıyı hafifletir. Aletlerin cilt üzerinde uygulanması, dokulara kontrollü bir baskı uygular ve kan dolaşımını artırır. Bu da iyileşme sürecini teşvik eder. 
+  
+  
+                      Fizyoterapistler, Graston terapisini bir tedavi planının bir parçası olarak kullanır. Aletlerin kullanılacağı bölgeler ve uygulanacak teknikler, hastanın durumuna ve ihtiyaçlarına göre belirlenir. Terapi süresi ve sıklığı, tedaviye yanıt ve ilerleme durumuna bağlı olarak ayarlanır. Graston terapisi, kas gerginlikleri, tendonitler, bağ yaralanmaları ve kronik ağrılar gibi birçok durumda etkili olabilir. Fizyoterapistler, hastaların spesifik ihtiyaçlarına göre terapiyi uyarlar ve en iyi sonuçları elde etmek için tedavi planını kişiselleştirir. 
+                      
+                      
+                      Graston terapisi, kas-iskelet sistemi problemlerinin tedavisinde kullanılan etkili bir yöntemdir. Ağrıyı hafifletir, doku iyileşmesini teşvik eder ve hareket aralığını artırır. Fizyoterapistler, Graston terapisini hastaların ihtiyaçlarına göre uyarlar ve en iyi sonuçları elde etmek için tedavi planını bireyselleştirir.</p>
+                    </div>
+                    <div class="col-lg-6 col-12 plr-15">
+                      <img src="images/hizmetler/detail/graston-1.png" alt="Image" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 col-12">
+                      <img src="images/hizmetler/detail/graston-2.png" alt="Image" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade kinezyo-bantlama-tab" id="pills-kinezyo-bantlama" role="tabpanel" aria-labelledby="pills-kinezyo-bantlama-tab">
+                  <div class="row">
+                    <div class="col-12">
+                      <h2 style="color: #ea728c;">Kinezyo Bantlama</h2>
+                      <p class="text-justify">Kinesio bant, fizyoterapi uygulamalarında sıklıkla kullanılan bir yöntemdir. Esnek, pamuklu ve renkli bir banttır ve cilt üzerine uygulanarak kaslar, eklemler ve yumuşak dokuların desteklenmesini sağlar. Bu bantların temel amacı, hareketin kolaylaşmasını ve ağrının hafiflemesini sağlamaktır. Kinesio bantlar, gerilme özellikleri sayesinde cilde yapışarak kaslara destek sağlar. Bu destek, kasların hareketini optimize eder ve ağrıyı azaltır. Aynı zamanda, kan ve lenf dolaşımını artırarak doku iyileşmesini hızlandırır. Bantlar, uzun süreli kullanıma uygun olup suya dayanıklıdır. 
+  
+  
+                      Fizyoterapistler, kinesio bantları birçok durumda kullanabilir. Örneğin, spor yaralanmaları, kas zorlanmaları, eklem ağrıları, postür bozuklukları ve lenfatik drenaj sorunları gibi durumların tedavisinde etkilidir. Bantların uygulama şekli, hastanın ihtiyaçlarına ve tedavi hedeflerine göre değişir. 
+                      
+                      
+                      Sonuç olarak, kinesio bantlar, fizyoterapi pratiğinde yaygın olarak kullanılan bir yöntemdir. Kaslara destek sağlayarak hareketi kolaylaştırır, ağrıyı hafifletir ve doku iyileşmesini hızlandırır. Fizyoterapistler, hastaların spesifik ihtiyaçlarına göre kinesio bantları kullanır ve en iyi sonuçları elde etmek için tedavi planını kişiye özel olarak düzenler.</p>
+                    </div>
+                    <div class="col-lg-6 col-12 plr-15">
+                      <img src="images/hizmetler/detail/kinezyo-1.png" alt="Image" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 col-12">
+                      <img src="images/hizmetler/detail/kinezyo-2.png" alt="Image" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade evde-fizik-tedavi-tab" id="pills-evde-fizik-tedavi" role="tabpanel" aria-labelledby="pills-evde-fizik-tedavi-tab">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <h2 style="color: #ea728c;">Evde Fizik Tedavi</h2>
+                      <p class="text-justify">Evde fizik tedavi, birçok kişi için etkili ve erişilebilir bir seçenektir. Bu yöntem, bireylerin kendi ev ortamlarında fiziksel rehabilitasyon programlarını sürdürmelerine olanak sağlar. Evde fizik tedavi, hareket kabiliyetini artırmak, ağrıyı azaltmak ve günlük yaşam aktivitelerine dönüşü kolaylaştırmak için tasarlanmış egzersizler, masaj teknikleri ve uygun ekipmanların kullanımını içerir. 
+  
+  
+                      Evde fizik tedavisi programı, bireyin özel ihtiyaçlarına ve tedavi hedeflerine göre düzenlenir. Fizyoterapistler, bireyin durumunu değerlendirerek uygun egzersizler, hareketler ve teknikler belirler. Video veya yazılı talimatlarla desteklenen programlar, bireyin doğru şekilde egzersiz yapmasını sağlar. 
+                      
+                      
+                      Evde fizik tedavisi, birçok durumda etkili olabilir. Kas ve eklem ağrıları, postür bozuklukları, spor yaralanmaları, cerrahi sonrası rehabilite, felç sonrası iyileşme gibi durumlar evde fizik tedavisi için uygundur. Düzenli ve disiplinli bir şekilde evde yapılan fizik tedavi, bireylerin sağlık ve hareketliliklerini iyileştirmelerine yardımcı olur. Fizyoterapistler, bireyin ihtiyaçlarına ve hedeflerine uygun bir program oluşturur. Evde fizik tedavisi, ağrıyı azaltır, hareket kabiliyetini artırır ve günlük yaşam aktivitelerine dönüşü kolaylaştırır.</p>
+                    </div>
+                    <div class="col-lg-6 col-12 plr-15">
+                      <img src="images/hizmetler/detail/evde-1.png" alt="Image" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 col-12">
+                      <img src="images/hizmetler/detail/evde-2.png" alt="Image" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade mat-pilates-tab" id="pills-mat-pilates" role="tabpanel" aria-labelledby="pills-mat-pilates-tab">
+                  <div class="row">
+                    <div class="col-12">
+                      <h2 style="color: #ea728c;">Mat Pilates</h2>
+                      <p class="text-justify">Mat Pilates, fiziksel ve zihinsel sağlığı iyileştirmeye yönelik popüler bir egzersiz yöntemidir. Genellikle yoga matı üzerinde yapılan mat pilates, vücut ağırlığı ve küçük ekipmanlar kullanılarak gerçekleştirilir. Mat pilates, tüm vücutta kas gücünü artırmak, esnekliği geliştirmek, duruşu düzeltmek ve core kaslarını güçlendirmek için tasarlanmış bir dizi egzersizi içerir. Bu egzersizler, derin nefes alma, doğru postür ve akıcı hareketler üzerine odaklanarak bedenin dengesini ve esnekliğini artırır. Bir mat pilates dersi genellikle bir egzersiz matı üzerinde yapılır ve vücut ağırlığı kullanılır. Ayrıca direnç bantları, küçük top ve halka gibi ekipmanlar da kullanılabilir. Dersler genellikle fizyoterapistler veya uzman bir eğitmen eşliğinde gerçekleştirilir ve bireysel ihtiyaçlara ve yeteneklere uygun olarak uyarlanabilir. Mat pilatesin birçok faydası vardır. Düzenli olarak yapılması duruşun düzelmesine yardımcı olur, esneklik ve kas tonusunu artırır, kas dengesini geliştirir, stresi azaltır ve zihinsel odaklanmayı iyileştirir. Aynı zamanda orta düzeyde bir egzersiz olduğu için farklı fitness seviyelerindeki kişilere uygundur. 
+  
+                      Fizyoterapistler, mat pilatesi hastaların ihtiyaçlarına ve seviyelerine uygun olarak uyarlar. Bireysel bir yaklaşım benimsenir ve egzersizler, hastanın fiziksel yeteneklerine ve sağlık durumuna göre özelleştirilir. Fizyoterapistler, doğru form ve teknikleri öğretir, egzersizleri doğru bir şekilde yapmayı sağlar ve herhangi bir yaralanma riskini en aza indirir. Özellikle rehabilitasyon sürecinde mat pilates, hastaların vücut farkındalığını artırır ve zihinsel odaklanmayı iyileştirir. Nefes alma teknikleri ve akıcı hareketler, hastaların hareketlerini bilinçli bir şekilde yönlendirmesine yardımcı olur ve stresi azaltır.</p>
+                    </div>
+                    <div class="row mt-20 plr-15">
+                      <div class="col-lg-6 col-12">
+                        <img src="images/hizmetler/detail/mat-1.png" alt="Image" class="img-fluid">
+                      </div>
+                      <div class="col-lg-6 col-12">
+                        <img src="images/hizmetler/detail/mat-2.png" alt="Image" class="img-fluid">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade reformer-pilates-tab" id="pills-reformer-pilates" role="tabpanel" aria-labelledby="pills-reformer-pilates-tab">
+                  <div class="row">
+                    <div class="col-12">
+                      <h2 style="color: #ea728c;">Reformer Pilates</h2>
+                      <p class="text-justify">Reformer Pilates, fiziksel sağlığı iyileştirmek ve kas kuvvetini artırmak için etkili bir egzersiz yöntemidir. Fizyoterapistler, reformer pilatesi rehabilitasyon programlarının bir parçası olarak sıklıkla önerirler.  Reformer Pilates'in en belirgin özelliği, reformer adı verilen özel bir cihazın kullanılmasıdır. Reformer, kaydırma sistemi, yaylar ve ayarlanabilir ekipmanlardan oluşan bir platformdur. Bu platform üzerinde yapılan egzersizler, direnç ve destek sağlayarak kas gruplarının etkili bir şekilde çalışmasını sağlar. Yaylar, kaslara direnç uygulayarak güçlenmelerini ve kas tonusunu artırmalarını sağlar. Ayrıca, platformun kayma özelliği, vücudun dengede kalmasını gerektiren hareketlerin yapılmasını sağlar. Reformer Pilates, tüm vücutta kas kuvvetini artırmak için tasarlanmıştır. Egzersizler, özellikle çekirdek kaslarını, sırt ve karın kaslarını hedefler. Bu kas gruplarının güçlendirilmesi, vücudun stabilitesini artırır, duruşu düzeltir ve sırt ağrısının azalmasına yardımcı olur. Ayrıca, bacak, kol ve omuz kaslarının güçlenmesini sağlar. Reformer Pilates, esneklik ve hareket aralığını artırma konusunda da etkilidir. Egzersizler, kasları uzatır, eklemlerin esnekliğini artırır ve vücut hareketliliğini geliştirir. Bu, günlük aktivitelere katılımı iyileştirir ve spor performansını optimize eder. 
+  
+                      Fizyoterapistler, reformer pilatesi danışanlarının ihtiyaçlarına ve seviyelerine göre özelleştirir. Bireysel bir yaklaşım benimsenir ve egzersizler, hastanın fiziksel yeteneklerine ve sağlık durumuna uygun olarak ayarlanır. Fizyoterapistler, doğru form ve teknikleri öğretir, egzersizleri doğru bir şekilde yapmayı sağlar ve herhangi bir yaralanma riskini en aza indirir. Sonuç olarak, Reformer Pilates, fizyoterapistler tarafından sıklıkla kullanılan etkili bir egzersiz yöntemidir. Rehabilitasyon sürecinde, belirli bir kas grubunu hedefleyerek güçlendirirken aynı zamanda denge, esneklik ve duruşu da düzeltmeye yardımcı olur. Bu egzersiz yöntemi, özellikle bel ve boyun ağrısı, postür problemleri ve sporcu rehabilitasyonunda faydalıdır.</p>
+                    </div>
+                    <div class="row mt-20 plr-15">
+                      <div class="col-lg-6 col-12">
+                        <img src="images/hizmetler/detail/reformer-1.png" alt="Image" class="img-fluid">
+                      </div>
+                      <div class="col-lg-6 col-12">
+                        <img src="images/hizmetler/detail/reformer-2.png" alt="Image" class="img-fluid">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade hamile-pilates-tab" id="pills-hamile-pilates" role="tabpanel" aria-labelledby="pills-hamile-pilates-tab">
+                  <div class="row">
+                    <div class="col-12">
+                      <h2 style="color: #ea728c;">Hamile Pilates</h2>
+                      <p class="text-justify">Hamile pilatesi, gebelik döneminde kadınların fiziksel ve zihinsel sağlığını destekleyen etkili bir egzersiz yöntemidir. Bu özel pilates programı, güvenli ve uygun egzersizlerle anne adaylarının esneklik, kas gücü, denge ve postürlerini geliştirmeyi hedefler. 
+  
+                      Hamile pilatesi, gebelik sürecindeki değişikliklere uyum sağlamak için uyarlanmış egzersizler sunar. Yavaş, kontrollü hareketlerle karın, sırt, pelvik taban ve kalça kaslarını çalıştırır. Aynı zamanda nefes tekniklerini de vurgular, doğum sürecinde rahatlamayı ve kontrollü nefes almayı sağlar. Bu egzersizler, kasları güçlendirirken aynı zamanda eklemlere ve bağlara da destek olur. Postürü düzeltir, sırt ağrılarını azaltır ve genel vücut farkındalığını artırır. Hamile pilatesi, gebelikte sağlıklı kilo alımını teşvik eder, enerji düzeyini yükseltir ve stresi azaltır. 
+                      
+                      Hamile pilatesi programları, bir fizyoterapist veya uzman bir pilates eğitmeni eşliğinde yapılmalıdır. Bireysel ihtiyaçlara ve gebelik sürecine özel olarak düzenlenir. Her egzersiz seansı, anne adayının konforunu ve güvenliğini ön planda tutar. Hamile pilatesi, gebelik döneminde sağlıklı bir şekilde egzersiz yapmayı hedefler. Esneklik, kas gücü, denge ve postürün geliştirilmesine yardımcı olur. Uzman bir rehberlikle yapılan hamile pilatesi, anne adaylarının fiziksel ve zihinsel sağlığını destekler ve gebelik sürecini daha rahat geçirmelerine yardımcı olur.</p>
+                    </div>
+                    <div class="row mt-20 plr-15">
+                      <div class="col-lg-6 col-12">
+                        <img src="images/hizmetler/detail/hamile-1.png" alt="Image" class="img-fluid">
+                      </div>
+                      <div class="col-lg-6 col-12">
+                        <img src="images/hizmetler/detail/hamile-2.png" alt="Image" class="img-fluid">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade diyetisyen-tab" id="pills-diyetisyen" role="tabpanel" aria-labelledby="pills-diyetisyen-tab">
+                  <div class="row">
+                    <div class="col-12">
+                      <h2 style="color: #ea728c;">Diyetisyen</h2>
+                      <p class="text-justify">Diyetisyen, sağlık bilimleri beslenme ve diyetetik eğitim ve öğretim programını en az dört yılda tamamlayarak Beslenme ve Diyetetik Lisans Diploması alarak diyetisyen unvanını kazanıp; diyetisyenlik mesleğini yapmaya ve uygulamaya hak kazanan profesyonel sağlık personelidir. 
+  
+                      Diyetisyenlik, beslenme ve sağlığın birleştiği bir meslektir. Diyetisyenler, bireylerin sağlıklı beslenme alışkanlıkları geliştirmelerine yardımcı olur ve özel beslenme ihtiyaçlarına uygun, bireylerin yaş, cinsiyet, sağlık durumu, aktivite seviyesi ve kişisel tercihlerini dikkate alarak beslenme planları hazırlar. Bu profesyoneller, sağlıklı bir yaşam tarzı için besin değerlerini anlamlandırır, kilo yönetimi, hastalıkların tedavisi veya spora yönelik özel diyetler gibi konularda danışmanlık yapar.  
+                      
+                      Sağlıklı beslenme programları yaşam kalitesini arttırır, hastalıkların tedavisine yardım eder, kilo yönetiminde etkilidir.</p>
+                      <h5 style="color: #ea728c;">Beslenme ve Diyet Bölümümüzde;</h5>
+                      <ul>
+                        <li>Obezite</li>
+                        <li>Aşırı zayıflık</li>
+                        <li>Kalp & Damar Hastalıkları</li>
+                        <li>Diyabet</li>
+                        <li>Tansiyon</li>
+                        <li>Mide ve Barsak Hastalıkları (çölyak, spastik kolon, ülser, reflü…)</li>
+                        <li>Karaciğer Hastalıkları (karaciğer yağlanması, hepatit…)</li>
+                        <li>Gebe ve Emzirme Döneminde Beslenme</li>
+                        <li>Çocuk ve Adölesan Döneminde Beslenme</li>
+                      </ul>
+                      <p>ile ilgili problemlerle gelen hastalarımızın tedavileri yapılmaktadır.</p>
+                      <h5 style="color: #ea728c;">Tedavi Öncesinde</h5>
+                      <p>Vücut analiz cihazıyla yağ, kas, su oranı ölçümleri yapılmakta, <br> 
+                        Bazal metabolizma hızları ve metabolizma yaşları belirlenmekte, <br>
+                        Geriye dönük beslenme durumları ayrıntılı olarak sorgulanmakta, <br>
+                        Kan değerleri incelenmekte ve bununla birlikte çalışma ve sosyal şartları da dikkate alınarak yaş, boy, cinsiyet, fiziksel aktiviteleri doğrultusunda ‘Kişiye Özel Sağlıklı Diyet Programı’ hazırlanmakta ve düzenli takibi sağlanmaktadır.
+                      </p>
+                    </div>
+                    <div class="row mt-20 plr-15">
+                      <div class="col-lg-6 col-12">
+                        <img src="images/hizmetler/detail/diyetisyen-1.png" alt="Image" class="img-fluid">
+                      </div>
+                      <div class="col-lg-6 col-12">
+                        <img src="images/hizmetler/detail/diyetisyen-2.png" alt="Image" class="img-fluid">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    
 
     <footer class="site-footer">
       <div class="container">
@@ -364,7 +366,7 @@
               <img src="images/logo-circle.png" alt="">
             </div>
             <div class="row">
-              <div class="col-md-12 mb-5 mb-lg-0 col-lg-12 text-center">
+              <div class="col-md-12 mb-5 mb-lg-0 col-lg-12 text-center" style="font-size: 22px;">
                   <a href="https://www.instagram.com/umtfizyoterapi/?igshid=ZDdkNTZiNTM%3D" class="pl-0 pr-3" target="_blank" ><span class="icon-instagram"></span></a>
                   <a href="https://www.google.com/url?q=https%3A%2F%2Fwa.me%2F%2B905345040277.&sa=D&sntz=1&usg=AOvVaw2mE5ysltzPs6w_h1Kr6Tgc" class="pl-3 pr-3" target="_blank" ><span class="icon-whatsapp"></span></a>
                   <a href="tel:+905345040277" class="pl-3 pr-3" target="_blank" ><span class="icon-phone"></span></a>
@@ -377,7 +379,7 @@
           <div class="col-12 text-center mt-20">
             <p>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a> and edited by <a href="https://www.linkedin.com/in/fatihakgunduz/" target="_blank">fth</a> 
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
           </div>
@@ -401,6 +403,7 @@
     <script src="js/rangeslider.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/typed.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     
     <script>
         var typed = new Typed('.typed-words', {
@@ -412,6 +415,91 @@
         loop: true,
         showCursor: true
         });
+    </script>
+
+    <script>
+      function activate_menu() {
+        // Get the active tab-pane ID
+        var activeTabPane = $('.nav-pills a.active').attr('id');
+
+        // Remove active class from the previous tab in site-menu
+        var previousTab = $('.site-menu li.active');
+        previousTab.removeClass('active');
+
+        activeTabPane = activeTabPane.replace("-tab", "-menu");
+
+        // Add active class to the corresponding tab in site-menu and its parents
+        switch (activeTabPane) {
+          case 'pills-manuel-terapi-menu':
+          case 'pills-kupa-terapi-menu':
+          case 'pills-kuru-igne-menu':
+          case 'pills-graston-menu':
+          case 'pills-kinezyo-bantlama-menu':
+          case 'pills-evde-fizik-tedavi-menu':
+            $('.hizmetler-menu').addClass('active');
+            $('.pills-fizyoterapi-menu').addClass('not-clickable');
+            $('.pills-fizyoterapi-menu').addClass('active');
+            $('.' + activeTabPane).addClass('active');
+            $('.' + activeTabPane).addClass('not-clickable');
+            break;
+          case 'pills-mat-pilates-menu':
+          case 'pills-reformer-pilates-menu':
+          case 'pills-hamil/e-pilates-menu':
+            $('.hizmetler-menu').addClass('active');
+            $('.pills-pilates-menu').addClass('not-clickable');
+            $('.pills-pilates-menu').addClass('active');
+            $('.' + activeTabPane).addClass('active');
+            $('.' + activeTabPane).addClass('not-clickable');
+            break;
+          case 'pills-diyetisyen-menu':
+            $('.hizmetler-menu').addClass('active');
+            $('.pills-diyetisyen-menu').addClass('not-clickable');
+            $('.pills-diyetisyen-menu').addClass('active');
+            break;
+        }
+      };
+
+      $(document).ready(function() {
+        $('.nav-link').on('click', function() {
+          $('.nav-link').removeClass('active'); // Remove active class from all tabs
+          $(this).addClass('active'); // Add active class to the clicked tab
+
+          var target = $(this).attr('href'); // Get the target tab content
+          $('.tab-pane').removeClass('show active'); // Hide all tab content
+          $(target).addClass('show active'); // Show the target tab content
+          
+          activate_menu()
+        });
+
+        // Get the current URL and extract the "tab" parameter value
+        const urlParams = new URLSearchParams(window.location.search);
+        const activeTab = urlParams.get("tab");
+        
+        // Check if there is an active tab parameter and activate the corresponding tab
+        if (activeTab) {
+          switch (activeTab) {
+          case 'manuel-terapi':
+          case 'kupa-terapi':
+          case 'kuru-igne':
+          case 'graston':
+          case 'kinezyo-bantlama':
+          case 'evde-fizik-tedavi':
+          case 'mat-pilates':
+          case 'reformer-pilates':
+          case 'hamile-pilates':
+          case 'diyetisyen':
+            $('.nav-link').removeClass('active'); // Remove active class from all tabs
+            $('.' + activeTab).addClass('active'); // Add active class to the clicked tab
+
+            var target = $('.'+activeTab).attr('href'); // Get the target tab content
+            $('.tab-pane').removeClass('show active'); // Hide all tab content
+            $('.' + activeTab + '-tab').addClass('show active');
+          }
+        }
+        activate_menu()
+
+      });
+
     </script>
 </body>
 </html>

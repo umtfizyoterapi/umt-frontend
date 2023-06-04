@@ -3,12 +3,28 @@
  	easing: 'slide',
  	once: true
  });
+  
 
 jQuery(document).ready(function($) {
 
 	"use strict";
 
-	
+	// // Disable click behavior for the li tags with the "not-clickable" class
+    // const notClickableItems = document.querySelectorAll('.not-clickable');
+    // notClickableItems.forEach(item => {
+    //   const link = item.querySelector('a');
+    //   link.addEventListener('click', function(event) {
+    //     event.preventDefault();
+    //   });
+    // });
+
+	$(document).ready(function() {
+		$('.not-clickable > a, .not-clickable .dropdown a').click(function(event) {
+		  if ($(this).parent().hasClass('active')) {
+			event.preventDefault();
+		  }
+		});
+	});
 
 	var siteMenuClone = function() {
 

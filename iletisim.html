@@ -54,29 +54,29 @@
 
               <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
                 <li><a href="index.html"><span>Ana Sayfa</span></a></li>
-                <li class="has-children">
-                  <a href="hizmetler.html"><span>Hizmetler</span></a>
+                <li class="has-children not-clickable">
+                  <a href="#"><span>Hizmetler</span></a>
                   <ul class="dropdown arrow-top">
-                    <li class="has-children">
-                      <a href="hizmetler.html">Fizyoterapi</a>
+                    <li class="has-children not-clickable">
+                      <a href="#">Fizyoterapi</a>
                       <ul class="dropdown">
-                        <li class="active"><a href="hizmetler.html">Manuel Terapi</a></li>
-                        <li><a href="hizmetler.html">Kupa Terapi</a></li>
-                        <li><a href="hizmetler.html">Kuru İğne</a></li>
-                        <li><a href="hizmetler.html">Graston</a></li>
-                        <li><a href="hizmetler.html">Kinezyo Bantlama</a></li>
-                        <li><a href="hizmetler.html">Evde Fizik Tedavi</a></li>
+                        <li><a href="hizmetler.html?tab=manuel-terapi">Manuel Terapi</a></li>
+                        <li><a href="hizmetler.html?tab=kupa-terapi">Kupa Terapi</a></li>
+                        <li><a href="hizmetler.html?tab=kuru-igne">Kuru İğne</a></li>
+                        <li><a href="hizmetler.html?tab=graston">Graston</a></li>
+                        <li><a href="hizmetler.html?tab=kinezyo-bantlama">Kinezyo Bantlama</a></li>
+                        <li><a href="hizmetler.html?tab=evde-fizik-tedavi">Evde Fizik Tedavi</a></li>
                       </ul>
                     </li>
-                    <li class="has-children">
-                      <a href="pilates.html">Pilates</a>
+                    <li class="has-children not-clickable">
+                      <a href="#">Pilates</a>
                       <ul class="dropdown">
-                        <li><a href="pilates.html">Mat Pilates</a></li>
-                        <li><a href="pilates.html">Reformer Pilates</a></li>
-                        <li><a href="pilates.html">Hamile Pilates</a></li>
+                        <li><a href="hizmetler.html?tab=mat-pilates">Mat Pilates</a></li>
+                        <li><a href="hizmetler.html?tab=reformer-pilates">Reformer Pilates</a></li>
+                        <li><a href="hizmetler.html?tab=hamile-pilates">Hamile Pilates</a></li>
                       </ul>
                     </li>
-                    <li><a href="diyetisyen.html">Diyetisyen</a></li>
+                    <li><a href="hizmetler.html?tab=diyetisyen">Diyetisyen</a></li>
                   </ul>
                 </li>
                 <li><a href="blog.html"><span>Blog</span></a></li>
@@ -205,7 +205,7 @@
             <h2 class="mt-0 text-white">ÜCRETSİZ ÖN GÖRÜŞME VE DEĞERLENDİRME</h2>
           </div>
           <div class="col-lg-4">
-            <p class="mb-0"><a href="iletisim.html" class="btn btn-outline-white text-white btn-md btn-pill px-5 font-weight-bold btn-block">Bize Ulaşın!</a></p>
+            <p class="mb-0"><a href="#iletisim-formu" class="btn btn-outline-white text-white btn-md btn-pill px-5 font-weight-bold btn-block">Bize Ulaşın!</a></p>
           </div>
         </div>
       </div>
@@ -220,7 +220,7 @@
               <img src="images/logo-circle.png" alt="">
             </div>
             <div class="row">
-              <div class="col-md-12 mb-5 mb-lg-0 col-lg-12 text-center">
+              <div class="col-md-12 mb-5 mb-lg-0 col-lg-12 text-center" style="font-size: 22px;">
                   <a href="https://www.instagram.com/umtfizyoterapi/?igshid=ZDdkNTZiNTM%3D" class="pl-0 pr-3" target="_blank" ><span class="icon-instagram"></span></a>
                   <a href="https://www.google.com/url?q=https%3A%2F%2Fwa.me%2F%2B905345040277.&sa=D&sntz=1&usg=AOvVaw2mE5ysltzPs6w_h1Kr6Tgc" class="pl-3 pr-3" target="_blank" ><span class="icon-whatsapp"></span></a>
                   <a href="tel:+905345040277" class="pl-3 pr-3" target="_blank" ><span class="icon-phone"></span></a>
@@ -233,7 +233,7 @@
           <div class="col-12 text-md-center text-left">
             <p>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a> and edited by <a href="https://www.linkedin.com/in/fatihakgunduz/" target="_blank">fth</a> 
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
           </div>
@@ -309,19 +309,12 @@
           url: 'https://hamenos.pythonanywhere.com/send-email',
           data: formData,
           success: function(response) {
+            // Display success message
+            $('#error-message').html('').hide();
+            $('#success-message').html('<p>Formunuz gönderildi. En kısa sürede size ulaşacağız.</p>').show();
 
-            if(response == 'success'){
-              // Display success message
-              $('#error-message').html('').hide();
-              $('#success-message').html('<p>Formunuz gönderildi. En kısa sürede size ulaşacağız.</p>').show();
-
-              // Clear form inputs
-              $('#iletisim-formu')[0].reset();
-            } else {
-              errorMessages = '<p>Bir hatayla karşılaştık. Lütfen tekrar deneyin.</p>';
-              $('#success-message').html('').hide();
-              $('#error-message').html(errorMessages).show();
-            }
+            // Clear form inputs
+            $('#iletisim-formu')[0].reset();
             $submitButton.removeClass('loading').attr('disabled', false);
           }, 
           error: function(xhr, status, error) {
@@ -334,6 +327,5 @@
       });
     });
   </script>  
-  
   </body>
 </html>
