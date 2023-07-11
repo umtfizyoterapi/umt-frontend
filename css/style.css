@@ -1,3 +1,20 @@
+.top-info {
+  background-color: #d44545;
+}
+
+.contact-info a {
+  display: inline-block;
+  margin-right: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.contact-info i {
+  margin-right: 5px;
+  color: white;
+}
+
 .scroll-arrow {
   position: fixed;
   bottom: 60px;
