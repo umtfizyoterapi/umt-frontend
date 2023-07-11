@@ -3,6 +3,15 @@
  	easing: 'slide',
  	once: true
  });
+
+ window.addEventListener('scroll', function() {
+    var scrollArrow = document.querySelector('.scroll-arrow');
+    if (window.pageYOffset > 0) {
+      scrollArrow.classList.add('hide-arrow');
+    } else {
+      scrollArrow.classList.remove('hide-arrow');
+    }
+});
   
 
 jQuery(document).ready(function($) {

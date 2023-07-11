@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/rangeslider.css">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">    
     
   </head>
   <body>
@@ -114,7 +114,7 @@
       </div>
     </div>  
 
-    <div class="site-section bg-light">
+    <div class="site-section bg-light" id="targetDiv">
       <div class="container">
         <div class="row">
           <div class="col-md-7 mb-5" data-aos="fade">
@@ -242,6 +242,8 @@
     </footer>
   </div>
 
+  <div class="scroll-arrow"></div>
+
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/jquery-ui.js"></script>
@@ -271,6 +273,16 @@
   </script>
 
   <script src="js/main.js"></script>
+
+  <script>
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        var targetDiv = document.getElementById('targetDiv');
+        var targetOffset = targetDiv.offsetTop;
+        window.scrollTo({ top: targetOffset, behavior: 'smooth' });
+      }, 1000); // Delay in milliseconds (adjust as desired)
+    });
+  </script>
 
   <script type="text/javascript">
     $(document).ready(function() {
@@ -326,6 +338,6 @@
         });
       });
     });
-  </script>  
+  </script>
   </body>
 </html>

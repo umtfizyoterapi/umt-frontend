@@ -1,3 +1,50 @@
+.scroll-arrow {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90px;
+  height: 90px;
+  opacity: 1;
+  visibility: visible;
+  z-index: 999;
+  animation: arrowBounce 1.5s infinite;
+}
+
+.scroll-arrow:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 24px;
+  height: 24px;
+  border-bottom: 4px solid #fff;
+  border-right: 4px solid #fff;
+  opacity: 1;
+}
+
+@keyframes arrowBounce {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  50% {
+    opacity: 0;
+    transform: translate(-50%, 30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+.hide-arrow {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
 #title {
   background-image: url('images/hero_bg_1.jpg');
   background-size: cover;
