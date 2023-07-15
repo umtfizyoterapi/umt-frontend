@@ -24,12 +24,26 @@
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/rangeslider.css">
 
-    <link rel="stylesheet" href="css/style.css">
-    
+    <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
   </head>
   <body>
   
   <div class="site-wrap">
+
+    <div class="top-info">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 text-right">
+            <div class="contact-info">
+              <a href="tel:+90 534 504 02 77"><i class="fas fa-phone"></i> &nbsp;   +90 534 504 02 77</a>
+              <a href="mailto:umtfizyoterapi@gmail.com"><i class="fas fa-envelope"></i> &nbsp;  umtfizyoterapi@gmail.com</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="site-mobile-menu">
       <div class="site-mobile-menu-header">
@@ -88,8 +102,8 @@
           </div>
 
 
-          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
-
+          <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;">
+            <a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a>
           </div>
 
         </div>
@@ -172,7 +186,7 @@
               </div>              
             </form>
           </div>
-          <div class="col-md-5" data-aos="fade" data-aos-delay="100"> 
+          <div class="col-md-5" data-aos="fade" data-aos-delay="100"  id="targetDiv"> 
             <div class="p-4 mb-3 bg-white">
               <p class="mb-0 font-weight-bold">Adres</p>
               <p class="mb-4"><a href="https://www.google.com/maps/place/Ba%C4%9Fl%C4%B1ca+Umtfizyoterapi+ve+Pilates/@39.8969228,32.6454981,17z/data=!3m1!4b1!4m6!3m5!1s0x14d339cea0b3dc91:0xb9298b41abf00a90!8m2!3d39.8969187!4d32.648073!16s%2Fg%2F11sr_wcy8n?hl=tr">Bağlıca Mah. Mert Cd. No: 4 Mermer Plaza Etimesgut/ANKARA</a></p>
@@ -242,6 +256,8 @@
     </footer>
   </div>
 
+  <div class="scroll-arrow"></div>
+
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/jquery-ui.js"></script>
@@ -271,6 +287,16 @@
   </script>
 
   <script src="js/main.js"></script>
+
+  <script>
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        var targetDiv = document.getElementById('targetDiv');
+        var targetOffset = targetDiv.offsetTop;
+        window.scrollTo({ top: targetOffset, behavior: 'smooth' });
+      }, 300); // Delay in milliseconds (adjust as desired)
+    });
+  </script>
 
   <script type="text/javascript">
     $(document).ready(function() {
@@ -326,6 +352,6 @@
         });
       });
     });
-  </script>  
+  </script>
   </body>
 </html>
