@@ -4,7 +4,7 @@
 
 .contact-info a {
   display: inline-block;
-  margin-right: 12px;
+  margin-right: 20px;
   color: white;
   text-decoration: none;
   font-size: 14px;
@@ -1000,6 +1000,13 @@ h1, h2, h3, h4, h5,
 @media (max-width: 991.98px) {
   .site-blocks-cover h1 {
     font-size: 2rem;
+  }
+  .contact-info a {
+    display: inline-block;
+    margin-right: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
   }
 }
 
